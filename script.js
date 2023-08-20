@@ -42,7 +42,7 @@ function moveTile(row, col) {
     emptyTile = { row, col };
     renderBoard();
     if (checkWin()) {
-        setTimeout(() => alert('Вы победили!'), 100);
+        setTimeout(() => alert('You win!'), 100);
     }
 }
 
