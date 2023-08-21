@@ -1,5 +1,5 @@
 const board = document.getElementById('game-board');
-const size = 4;
+const size = 5;
 let tiles = [];
 let emptyTile = { row: size - 1, col: size - 1 };
 
