@@ -4,6 +4,7 @@ let tiles = [];
 let emptyTile = { row: size - 1, col: size - 1 };
 
 function createTile(value) {
+    consol.log("createTile",value)
     const tile = document.createElement('div');
     tile.classList.add('tile');
     tile.textContent = value === size * size ? '' : value;
