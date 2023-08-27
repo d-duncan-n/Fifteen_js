@@ -4,7 +4,7 @@ let tiles = [];
 let emptyTile = { row: size - 1, col: size - 1 };
 
 function createTile(value) {
-    consol.log("createTile",value)
+    console.log("createTile",value)
     const tile = document.createElement('div');
     tile.classList.add('tile');
     tile.textContent = value === size * size ? '' : value;
@@ -12,6 +12,7 @@ function createTile(value) {
 }
 
 function shuffleTiles() {
+    console.log("shuffleTiles",value)
     tiles = [];
     for (let i = 1; i <= size * size; i++) {
         tiles.push(i);
