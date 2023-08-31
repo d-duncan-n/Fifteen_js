@@ -37,6 +37,7 @@ function renderBoard() {
 }
 
 function moveTile(row, col) {
+    console.log("moveTile",row, col)
     if (Math.abs(emptyTile.row - row) + Math.abs(emptyTile.col - col) !== 1) {
         return;
     }
