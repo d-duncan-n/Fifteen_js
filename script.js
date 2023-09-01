@@ -51,6 +51,7 @@ function moveTile(row, col) {
 }
 
 function checkWin() {
+    console.log("checkWin")
     for (let i = 0; i < size * size - 1; i++) {
         if (tiles[i] !== i + 1) {
             return false;
